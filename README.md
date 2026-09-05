@@ -13,6 +13,8 @@ to the "URL" input and type in this code:
 Hit "Save" button and when you visit www.google.sk, the background will
 be light gray.
 
+![screenshot](image/screenshot.png)
+
 # Built-in functions
 
 There are few built in functions built-in, you can use them without any
@@ -23,4 +25,8 @@ particular knowledge of JS. Try them out:
     removeImages();
 
     blackOnWhite();
+
+# Support
+
+You can support development on [Patreon](https://www.patreon.com/DusanHalicky) or you can hire me via [Upwork](https://www.upwork.com/freelancers/~013b4c3d6e772fdb01)
 
