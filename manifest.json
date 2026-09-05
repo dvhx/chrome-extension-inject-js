@@ -1,0 +1,46 @@
+{
+    "background": {
+        "service_worker": "js/service_worker.js"
+    },
+    "action": {
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "js/content.js"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ]
+        },
+        {
+            "js": [
+                "js/content_world_main.js"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "world": "MAIN"
+        }
+    ],
+    "description": "Modify any website by adding small piece of JS. Remove ugly fonts, increase contrast, etc.",
+    "icons": {
+        "16": "image/16.png",
+        "19": "image/19.png",
+        "32": "image/32.png",
+        "48": "image/48.png",
+        "128": "image/128.png"
+    },
+    "manifest_version": 3,
+    "minimum_chrome_version": "88",
+    "name": "Inject-JS",
+    "options_page": "options.html",
+    "permissions": ["storage", "scripting"],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "short_name": "Inject-JS",
+    "version": "0.1.17"
+}

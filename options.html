@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Options</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+    body, html {
+        height: 100%;
+        overflow: hidden;
+    }
+    div.menu {
+    }
+    button {
+      vertical-align: top;
+    }
+    label {
+      vertical-align: middle;
+    }
+    #pages {
+      min-width: 20em;
+    }
+    #url {
+      min-width: 20em;
+    }
+    textarea {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      height: calc(100% - 4em);
+      margin-top: 1ex;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="menu">
+      <label>
+        URL
+        <select style="max-width: 15em;" id="urls">
+        </select>
+      </label>
+      <button id="url_add" title="Add new URL">Add</button>
+      <button id="url_change" title="Edit current URL while preserving it's code">Change</button>
+      <button id="url_delete" title="Delete code for this URL">Delete</button>
+      &nbsp;
+      <button id="save" disabled>Save</button>
+      &nbsp;
+      <button id="import">Import all</button>
+      <button id="export">Export all</button>
+    </div>
+    
+    <textarea id="editor" spellcheck="false" placeholder="// type JS here, you can also use these built-in functions: removeUglyFonts(); removeImages(); blackOnWhite();"></textarea>
+
+    <script type="text/javascript" src="depend/sc/elements_with_id.js"></script>
+    <script type="text/javascript" src="depend/sc/choose_files.js"></script>
+    <script type="text/javascript" src="depend/sc/download.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+
+  </body>
+</html>
